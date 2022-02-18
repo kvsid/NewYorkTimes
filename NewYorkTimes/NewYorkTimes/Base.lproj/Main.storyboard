@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8J1-Gj-tvC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Articles-->
+        <scene sceneID="1KQ-vk-2d4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Articles" id="1PV-IG-EXV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9xX-Qu-S1E"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODR-iZ-KZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="-252"/>
+        </scene>
+        <!--Articles-->
+        <scene sceneID="D14-bg-znU">
+            <objects>
+                <navigationController id="k3t-6G-igr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Articles" image="book" catalog="system" id="XFX-Sa-2bJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IVA-Zu-dN5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1PV-IG-EXV" kind="relationship" relationship="rootViewController" id="GMa-dc-1wF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X42-Rj-cOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="-166"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="EaQ-PD-7cZ">
+            <objects>
+                <navigationController id="9uY-hQ-ZeK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="ceh-u2-L0N"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aRR-60-8RF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="am7-O6-KJf" kind="relationship" relationship="rootViewController" id="MEG-lc-o65"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coV-Dv-mED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="502"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="RH8-U9-U1p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorites" id="am7-O6-KJf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e5l-lY-26X"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJ0-Zv-BzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938" y="502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EKH-p7-HLK">
+            <objects>
+                <tabBarController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8J1-Gj-tvC" customClass="ViewController" customModule="NewYorkTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" alpha="0.5" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f3f-rc-kwK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="k3t-6G-igr" kind="relationship" relationship="viewControllers" id="Cqv-LE-S1Y"/>
+                        <segue destination="9uY-hQ-ZeK" kind="relationship" relationship="viewControllers" id="1WT-xP-9DV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJt-jQ-Lb1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
